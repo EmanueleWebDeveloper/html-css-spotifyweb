@@ -19,9 +19,15 @@ body header section {
     padding-top: 20px;
     font-size: 15px;
     width: 100%;
-    height: 100vh;
+    height: 100%; 
 }
+body header #fixed{
+    position: fixed;
+    bottom: 0;
+    width: 14%;
+    z-index: 1000;
 
+}
 body header section div picture{
     color: white;
     font-weight: bold;
@@ -62,18 +68,133 @@ body header section #down ul:first-child{
 
 body #container{
     display: flex; 
-    flex-direction: column; 
 }
 
-body #partealta #containerverticale{
+body #partealta{
+    width: 100%;
+}
+
+body #container #partealta #upgrade div{
     display: flex;
-    
+    justify-content: end;
+    padding: 20px;
+    padding-right: 10px;
+    background-color: #121212;
+    color: white;
+}
+
+body #container #partealta #upgrade div h5{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+body #container #partealta #partecentralediscord ul{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: blueviolet;
+}
+
+/* <!--parte 1--> */
+
+body #container #partealta #played{  
+    background-color: blueviolet;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+body #container #partealta #flexdischi .foto{
+    width: 16%;
+    height: 16%; 
+} 
+
+body #container #partealta #flexdischi .foto img{
+    width: 100%;
+    height: 100%;
+} 
+
+
+body #container #partealta #flexdischi{
+    display: flex;
+    padding: 10px;
+    text-align: center;   
+    gap: 10px; 
+    background-color: blueviolet;
+}
+
+
+/* <!--parte 2--> */
+
+body #container #partealta #creatoper{
+    background-color: blueviolet;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+body #container #partealta #flexdischidue .fotodue{
+    width: 16%;
+    height: 16%; 
+} 
+
+body #container #partealta #flexdischidue .fotodue img{
+    width: 100%;
+    height: 100%;
+} 
+body #container #partealta #flexdischidue{
+    display: flex;
+    padding: 10px;
+    text-align: center;   
+    gap: 10px; 
+    background-color: blueviolet;
+}
+
+/* <!--parte 3--> */
+
+body #container #partealta #popolari{  
+    background-color: blueviolet;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+body #container #partealta #flexdischitre .fototre{
+    width: 16%;
+    height: 16%; 
+} 
+
+body #container #partealta #flexdischitre .fototre img{
+    width: 100%;
+    height: 100%;
+} 
+
+body #container #partealta #flexdischitre{
+    display: flex;
+    padding: 10px;
+    text-align: center;   
+    gap: 10px; 
+    background-color: blueviolet;
 }
 
 
 
 
 
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
 
 footer div{
     display: flex;
