@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+body header section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: grey;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 20px;
+    font-size: 15px;
+    width: 100%;
+    height: 100vh;
+}
+
+body header section div picture{
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+body header section div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body header section div #screenpx{
+    display: none;
+}
+
+body header section div ul li:hover{
+    color: white;
+    
+}
+
+body header section div ul h3{
+    color: white;
+    font-weight: bold;
+}
+
+body header section #down{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 70px;
+}
+
+body header section #down ul:first-child{
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+body #container{
+    display: flex; 
+    flex-direction: column; 
+}
+
+body #partealta #containerverticale{
+    display: flex;
+    
+}
+
+
+
+
+
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+}
+
+footer #lettoresinistra{
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+}
+footer #lettoresinistra div i{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+footer div #lettoresinistra picture img{
+    width: 40px;
+}
+
+footer div div{
+    display: flex;
+    gap: 10px;
+
+    color: lightgray;
+}
+
+footer div #partecentrale{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div #partecentrale #lettorealto{
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;   
+}
+footer div #partecentrale #lettorealto #sinistra{
+    display: flex;
+    gap: 20px;   
+}
+
+footer div #partecentrale #lettorealto #centro{
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+footer div #partecentrale #lettorealto #destra{
+    display: flex;
+    gap: 20px;   
+}
+
+footer div #partedestra{
+    display: flex;
+    gap: 20px;   
+    padding-right: 10px;
+}
+
+
+
+
+@media screen and ( max-width: 320px ) {
+  
+  }
+
+
