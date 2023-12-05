@@ -8,6 +8,13 @@ li{
     list-style-type: none;
 }
 
+body #container{
+    display: flex; 
+}
+
+                /* MENU SINISTRA SPOTIFY */
+
+
 body header section {
     display: flex;
     flex-direction: column;
@@ -21,17 +28,39 @@ body header section {
     width: 100%;
     height: 100%; 
 }
+body header section div picture{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-left: -5px;
+}
+
+#fixed #icon {
+    filter: brightness(0) invert(1);
+}
+
 body header #fixed{
     position: fixed;
-    bottom: 0;
-    width: 14%;
+    bottom: 0px;
+    width: 15%;
+    height: 100%;
     z-index: 1000;
-
 }
+
 body header section div picture{
     color: white;
     font-weight: bold;
     font-size: 200%;
+}
+
+body header section div #PLAYLIST{
+    color: white;
+    padding-bottom: 10px;
+}
+
+body header section div ul li span{
+  padding-left: 5px;
 }
 
 body header section div ul{
@@ -44,6 +73,7 @@ body header section div #screenpx{
     display: none;
 }
 
+
 body header section div ul li:hover{
     color: white;
     
@@ -54,11 +84,25 @@ body header section div ul h3{
     font-weight: bold;
 }
 
+body header section div #testogrande li:first-child{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+body header section div #testogrande .fa-solid,.fa-plus{
+    background: grey;
+    color: black;
+    padding: 10px; 
+    margin-right: 5px; 
+}
+
 body header section #down{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-top: 70px;
+    padding-top: 90px;
 }
 
 body header section #down ul:first-child{
@@ -66,9 +110,14 @@ body header section #down ul:first-child{
     padding-bottom: 5px;
 }
 
-body #container{
-    display: flex; 
+body header section #down ul:last-child{
+    color: white;
+    padding-top: 3px;
 }
+
+
+              /* EFFETTUA UPGRADE SPOTIFY */
+
 
 body #partealta{
     width: 100%;
@@ -89,6 +138,10 @@ body #container #partealta #upgrade div h5{
     padding: 10px;
 }
 
+
+                 /* NAV SPOTIFY */
+
+
 body #container #partealta #partecentralediscord ul{
     display: flex;
     gap: 10px;
@@ -96,6 +149,9 @@ body #container #partealta #partecentralediscord ul{
     padding: 10px 0px;
     background-color: blueviolet;
 }
+
+             /* CANZONI IMMAGINI SPOTIFY */
+
 
 /* <!--parte 1--> */
 
@@ -183,9 +239,7 @@ body #container #partealta #flexdischitre{
 }
 
 
-
-
-
+                    /* FOOTER SPOTIFY */
 
 
 
@@ -221,7 +275,6 @@ footer div #lettoresinistra picture img{
 footer div div{
     display: flex;
     gap: 10px;
-
     color: lightgray;
 }
 
@@ -261,7 +314,34 @@ footer div #partedestra{
 
 
 @media screen and ( max-width: 320px ) {
-  
+  header #fixed div ul li span{
+    display: none;
   }
+
+  header #fixed div picture span{
+    display: none;
+  }
+
+  header #fixed div h3{
+    display: none;
+  }
+
+  header #fixed div #testogrande{
+    display: none;
+  }
+  
+  body header section {
+    text-align: center;
+    justify-content: space-between;
+    padding-inline: 15px;
+ }
+ body header #fixed{
+    
+    top: 0px;
+    height: 70%;
+    z-index: 1000;
+}
+}
+  
 
 
