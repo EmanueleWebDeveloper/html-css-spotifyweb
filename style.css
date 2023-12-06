@@ -4,344 +4,180 @@
     box-sizing: border-box;
 }
 
-li{
-    list-style-type: none;
+img{
+    display: block;
+    width: 100%;
+}
+.web-app{
+    height: 100vh;
 }
 
-body #container{
-    display: flex; 
-}
-
-                /* MENU SINISTRA SPOTIFY */
-
-
-body header section {
+.web-app-top{
+    height: calc( 100% - 90px );
+    background-color: #141922;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    color: grey;
+}
+
+.web-app-bottom{
+    height: 90px;
+    background-color: gray;
+    border: 1px solid red;
+}
+
+.web-app-sidebar{
     background-color: black;
-    padding-left: 20px;
-    padding-right: 50px;
-    padding-top: 20px;
-    font-size: 15px;
-    width: 100%;
-    height: 100%; 
-}
-body header section div picture{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding-bottom: 10px;
-    margin-left: -5px;
-}
-
-#fixed #icon {
-    filter: brightness(0) invert(1);
-}
-
-body header #fixed{
-    position: fixed;
-    bottom: 0px;
-    width: 15%;
+    width: 50px;
     height: 100%;
-    z-index: 1000;
-}
-
-body header section div picture{
-    color: white;
-    font-weight: bold;
-    font-size: 200%;
-}
-
-body header section div #PLAYLIST{
-    color: white;
-    padding-bottom: 10px;
-}
-
-body header section div ul li span{
-  padding-left: 5px;
-}
-
-body header section div ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-body header section div #screenpx{
-    display: none;
-}
-
-
-body header section div ul li:hover{
-    color: white;
     
 }
 
-body header section div ul h3{
-    color: white;
-    font-weight: bold;
+.web-app-dischi{
+   width: calc( 100% - 50px );
+   height: 100%;
+
+   padding-top: 110px;
+   padding-inline: 20px;
+   padding-bottom: 30px;
+
+   color: white;
+
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+
+   overflow: auto;
 }
 
-body header section div #testogrande li:first-child{
-    font-size: 20px;
+.web-app-upgrade{
+    height: 90px;
+    border: 1px solid lime;
+
+    position: fixed;
+    top: 0;
+    left: 50px;
+    right: 0;
+    background-color: #080b12;
+
     display: flex;
     align-items: center;
-    
-}
-
-body header section div #testogrande .fa-solid,.fa-plus{
-    background: grey;
-    color: black;
-    padding: 10px; 
-    margin-right: 5px; 
-}
-
-body header section #down{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 90px;
-}
-
-body header section #down ul:first-child{
-    border-bottom: 1px solid gray;
-    padding-bottom: 5px;
-}
-
-body header section #down ul:last-child{
-    color: white;
-    padding-top: 3px;
-}
-
-
-              /* EFFETTUA UPGRADE SPOTIFY */
-
-
-body #partealta{
-    width: 100%;
-}
-
-body #container #partealta #upgrade div{
-    display: flex;
     justify-content: end;
-    padding: 20px;
-    padding-right: 10px;
-    background-color: #121212;
+    padding-right: 30px;
+}
+
+.web-app-upgrade .btn{
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.web-app-upgrade .btn.btn-white{
+    border: 2px solid white;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
     color: white;
 }
 
-body #container #partealta #upgrade div h5{
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 10px;
+.web-app-ugrade .btn{
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
+.web-app-ugrade .btn.btn-white{
+    border: 2px solid white;
+}
 
-                 /* NAV SPOTIFY */
-
-
-body #container #partealta #partecentralediscord ul{
+.web-app-nav-dischi ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    padding: 10px 0px;
-    background-color: blueviolet;
-}
-
-             /* CANZONI IMMAGINI SPOTIFY */
-
-
-/* <!--parte 1--> */
-
-body #container #partealta #played{  
-    background-color: blueviolet;
-    color: white;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-body #container #partealta #flexdischi .foto{
-    width: 16%;
-    height: 16%; 
-} 
-
-body #container #partealta #flexdischi .foto img{
-    width: 100%;
-    height: 100%;
-} 
-
-
-body #container #partealta #flexdischi{
-    display: flex;
-    padding: 10px;
-    text-align: center;   
-    gap: 10px; 
-    background-color: blueviolet;
-}
-
-
-/* <!--parte 2--> */
-
-body #container #partealta #creatoper{
-    background-color: blueviolet;
-    color: white;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-body #container #partealta #flexdischidue .fotodue{
-    width: 16%;
-    height: 16%; 
-} 
-
-body #container #partealta #flexdischidue .fotodue img{
-    width: 100%;
-    height: 100%;
-} 
-body #container #partealta #flexdischidue{
-    display: flex;
-    padding: 10px;
-    text-align: center;   
-    gap: 10px; 
-    background-color: blueviolet;
-}
-
-/* <!--parte 3--> */
-
-body #container #partealta #popolari{  
-    background-color: blueviolet;
-    color: white;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-body #container #partealta #flexdischitre .fototre{
-    width: 16%;
-    height: 16%; 
-} 
-
-body #container #partealta #flexdischitre .fototre img{
-    width: 100%;
-    height: 100%;
-} 
-
-body #container #partealta #flexdischitre{
-    display: flex;
-    padding: 10px;
-    text-align: center;   
-    gap: 10px; 
-    background-color: blueviolet;
-}
-
-
-                    /* FOOTER SPOTIFY */
-
-
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000; 
-  }
-
-footer div{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #242424;
 }
 
-footer #lettoresinistra{
-    display: flex;
-    gap: 20px;
-    padding-left: 10px;
+.web-app-nav-dischi ul li a{
+   font-size: 12px;
+   color: white;
+   opacity: 0.5;
 }
-footer #lettoresinistra div i{
+
+.web-app-nav-dischi ul li a:hover{
+    opacity: 1;
+ }
+
+ .web-app-albums,
+ .web-app-releae{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    padding-left: 10px;
-}
+ }
 
-footer div #lettoresinistra picture img{
-    width: 40px;
-}
-
-footer div div{
-    display: flex;
-    gap: 10px;
-    color: lightgray;
-}
-
-footer div #partecentrale{
+ .web-app-albums .disco,
+ .web-app-releae > div,
+ .web-app-popolari > div{
+    width: calc(100% / 2 - 10px);
     display: flex;
     flex-direction: column;
-}
-
-footer div #partecentrale #lettorealto{
-    display: flex;
-    gap: 30px;
-    padding-top: 10px;   
-}
-footer div #partecentrale #lettorealto #sinistra{
-    display: flex;
-    gap: 20px;   
-}
-
-footer div #partecentrale #lettorealto #centro{
-  border: 3px solid white;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-footer div #partecentrale #lettorealto #destra{
-    display: flex;
-    gap: 20px;   
-}
-
-footer div #partedestra{
-    display: flex;
-    gap: 20px;   
-    padding-right: 10px;
-}
-
-
-
-
-@media screen and ( max-width: 320px ) {
-  header #fixed div ul li span{
-    display: none;
-  }
-
-  header #fixed div picture span{
-    display: none;
-  }
-
-  header #fixed div h3{
-    display: none;
-  }
-
-  header #fixed div #testogrande{
-    display: none;
-  }
-  
-  body header section {
+    gap: 10px;
     text-align: center;
-    justify-content: space-between;
-    padding-inline: 15px;
  }
- body header #fixed{
-    
-    top: 0px;
-    height: 70%;
-    z-index: 1000;
+
+ .web-app-albums .disco h3{
+    text-transform: capitalize;
+ }
+
+ .web-app-albums .disco span{
+    opacity: 0.5; 
+}
+
+.web-app-popolari > div figure
+.web-app-popolari > div figure img{
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+
+
+@media screen and ( min-width: 576px ) {
+    .web-app-sidebar{      
+        width: 250px;
+    }
+    .web-app-dischi{
+        width: calc( 100% - 250px );
+        height: 100%;
+     }
+     
+     .web-app-upgrade{
+         left: 250px;   
+     }
+}
+
+@media screen and ( min-width: 768px ) {
+ .web-app-albums .disco,
+ .web-app-releae > div,
+ .web-app-releae-popolari > div{
+    width: calc(100% / 4 - 10px);  
+ }
+}
+
+
+
+@media screen and ( min-width: 992px ) {
+    .web-app-albums .disco,
+    .web-app-releae > div,
+    .web-app-releae-popolari > div{
+       width: calc(100% / 6 - 10px);  
 }
 }
-  
+
 
 
