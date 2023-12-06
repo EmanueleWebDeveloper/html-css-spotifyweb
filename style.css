@@ -28,8 +28,35 @@ img{
     background-color: black;
     width: 50px;
     height: 100%;
-    
+    color: gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
+
+.web-app-sidebar span,
+#off{
+     display: none;
+}
+
+.web-app-sidebar div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0px;
+}
+
+
+.web-app-sidebar div picture img{
+    filter: brightness(0) invert(1);
+    width: 22px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+
 
 .web-app-dischi{
    width: calc( 100% - 50px );
@@ -50,8 +77,6 @@ img{
 
 .web-app-upgrade{
     height: 90px;
-    border: 1px solid lime;
-
     position: fixed;
     top: 0;
     left: 50px;
@@ -146,6 +171,54 @@ a{
 }
 
 
+.web-app-bottom div{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    background-color: #242424;
+    font-size: 12px;
+    align-items: center;
+    gap: 30px;
+}
+
+.web-app-bottom div #lettoresinistra{
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.web-app-bottom #lettoresinistra div i{
+    display: flex;
+    padding-left: 5px;
+}
+
+.web-app-bottom div div{
+    display: flex;
+    gap: 5px;
+    color: lightgray;
+}
+
+.web-app-bottom div #partecentrale{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 30px;
+}
+
+.web-app-bottom div #partecentrale #lettorealto #sinistra{
+    display: flex;
+    gap: 10px;   
+}
+
+.web-app-bottom div #partecentrale #lettorealto #centro{
+
+  margin-inline: 40px;
+}
+
+
+
+
+
 
 @media screen and ( min-width: 576px ) {
     .web-app-sidebar{      
@@ -159,12 +232,65 @@ a{
      .web-app-upgrade{
          left: 250px;   
      }
+     .web-app-sidebar{      
+        align-items: flex-start;
+    }
+    
+    .web-app-sidebar span,
+    #off{
+         display: block;
+    }
+    
+    .web-app-sidebar div ul li{
+       display: flex;
+       padding-left: 20px;
+    }
+    .web-app-sidebar div ul li:hover{
+        border-left: 2px solid #ADFF2F;
+        color: white;
+     }
+    
+    .web-app-sidebar div ul{
+        gap: 10px;
+     }
+    .web-app-sidebar div picture img{
+        width: auto;
+        text-align: start;
+        margin-top: 10px;
+    }
+
+    .web-app-sidebar div ul li i{
+        padding-right: 5px;
+    }
+
+    .web-app-sidebar #down ul li:first-child{
+        border-bottom: 1px solid gray;
+        padding-bottom: 10px;
+        padding-right: 80px;
+    }
+    .web-app-sidebar div #testogrande .fa-plus{
+        background-color: gray;
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .web-app-sidebar div #testogrande li{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .web-app-sidebar #off h3{
+        color: white;
+    }
+    
 }
+
+
 
 @media screen and ( min-width: 768px ) {
  .web-app-albums .disco,
  .web-app-releae > div,
- .web-app-releae-popolari > div{
+ .web-app-popolari > div{
     width: calc(100% / 4 - 10px);  
  }
 }
