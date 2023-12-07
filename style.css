@@ -27,7 +27,7 @@ img{
 .web-app-sidebar{
     background-color: black;
     width: 50px;
-    height: 100%;
+    max-height: 100%;
     color: gray;
 
     display: flex;
@@ -48,15 +48,13 @@ img{
     margin: 10px 0px;
 }
 
-
-.web-app-sidebar div picture img{
-    filter: brightness(0) invert(1);
-    width: 22px;
-    margin-left: 15px;
-    text-align: center;
+.web-app-sidebar #down hr{
+    display: none;
 }
-
-
+.web-app-sidebar div svg{
+   height: 25px;
+   margin-top: 10px;
+}
 
 .web-app-dischi{
    width: calc( 100% - 50px );
@@ -82,7 +80,7 @@ img{
     left: 50px;
     right: 0;
     background-color: #080b12;
-
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -178,16 +176,22 @@ a{
     background-color: #242424;
     font-size: 12px;
     align-items: center;
-    gap: 30px;
 }
 
 .web-app-bottom div #lettoresinistra{
     display: flex;
     align-items: center; 
-    gap: 20px;
+    
     padding-left: 10px;
 }
 
+.web-app-bottom div #lettoresinistra div picture {
+    max-width: 60px;
+    min-width: 50px;
+}
+.web-app-bottom div #lettoresinistra div picture img{
+    width: 100%;
+}
 .web-app-bottom #lettoresinistra div i{
     display: flex;
     padding-left: 5px;
@@ -199,22 +203,46 @@ a{
     color: lightgray;
 }
 
+.web-app-bottom div div div ul{
+    display: flex;
+    flex-direction: column;
+}
+
 .web-app-bottom div #partecentrale{
     display: flex;
     flex-direction: column;
     padding-inline: 30px;
+    
 }
 
 .web-app-bottom div #partecentrale #lettorealto #sinistra{
-    display: flex;
-    gap: 10px;   
+    display: flex;  
+    padding-top: 10px; 
 }
+
+.web-app-bottom div #partecentrale #lettorealto #destra{
+    display: flex;
+    gap: 10px;  
+    padding-top: 10px; 
+}
+
 
 .web-app-bottom div #partecentrale #lettorealto #centro{
-
   margin-inline: 40px;
+  padding-top: 10px;
 }
 
+.web-app-bottom div #partecentrale #lettorebasso{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  .web-app-bottom div #partedestra{
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+  }
 
 
 
@@ -223,7 +251,19 @@ a{
 @media screen and ( min-width: 576px ) {
     .web-app-sidebar{      
         width: 250px;
+        align-items: flex-start;
+        padding-left: 10px;
     }
+
+    .web-app-sidebar #icona{
+        display: flex;
+        align-items: center;
+        }
+
+        .web-app-sidebar #icona span{
+            padding-top: 10px;
+            color: white;
+            }
     .web-app-dischi{
         width: calc( 100% - 250px );
         height: 100%;
@@ -232,10 +272,13 @@ a{
      .web-app-upgrade{
          left: 250px;   
      }
-     .web-app-sidebar{      
-        align-items: flex-start;
-    }
     
+    .web-app-sidebar div svg{
+        height: 30px; 
+        padding-right: 10px;
+        margin-left: 15px;
+     }
+
     .web-app-sidebar span,
     #off{
          display: block;
@@ -243,7 +286,8 @@ a{
     
     .web-app-sidebar div ul li{
        display: flex;
-       padding-left: 20px;
+       margin-left: 5px;
+       padding-left: 15px;
     }
     .web-app-sidebar div ul li:hover{
         border-left: 2px solid #ADFF2F;
@@ -263,16 +307,25 @@ a{
         padding-right: 5px;
     }
 
-    .web-app-sidebar #down ul li:first-child{
-        border-bottom: 1px solid gray;
-        padding-bottom: 10px;
-        padding-right: 80px;
-    }
     .web-app-sidebar div #testogrande .fa-plus{
         background-color: gray;
         color: black;
         font-size: 20px;
         padding: 10px;
+    }
+
+    .web-app-sidebar #down {
+        width: 200%;
+        display: flex;
+    }
+
+    .web-app-sidebar #down ul li:last-child {
+       color: white;
+    }
+
+    .web-app-sidebar #down hr{
+        width: 200%;
+        display: flex;
     }
     .web-app-sidebar div #testogrande li{
         display: flex;
@@ -281,6 +334,7 @@ a{
     }
     .web-app-sidebar #off h3{
         color: white;
+        padding-right: 15px;
     }
     
 }
