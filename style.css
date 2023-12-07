@@ -20,8 +20,7 @@ img{
 
 .web-app-bottom{
     height: 90px;
-    background-color: gray;
-    border: 1px solid red;
+    background-color: gray;    
 }
 
 .web-app-sidebar{
@@ -171,18 +170,17 @@ a{
 
 .web-app-bottom div{
     display: flex;
-    height: 100%;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #242424;
-    font-size: 12px;
     align-items: center;
 }
 
-.web-app-bottom div #lettoresinistra{
+.web-app-bottom  #lettoresinistra{
     display: flex;
     align-items: center; 
-    
+    width: 25%;    
     padding-left: 10px;
+    gap: 20px;
 }
 
 .web-app-bottom div #lettoresinistra div picture {
@@ -192,43 +190,59 @@ a{
 .web-app-bottom div #lettoresinistra div picture img{
     width: 100%;
 }
-.web-app-bottom #lettoresinistra div i{
+.web-app-bottom #lettoresinistra  div i{
     display: flex;
     padding-left: 5px;
+    flex-direction: column;
 }
 
-.web-app-bottom div div{
+.web-app-bottom #lettoresinistra #icone {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.web-app-bottom #lettoresinistra div {
+    display: flex;
+    
+    gap: 10px;
+}
+
+.web-app-bottom #contenitore-web-app{
     display: flex;
     gap: 5px;
     color: lightgray;
-}
-
-.web-app-bottom div div div ul{
-    display: flex;
-    flex-direction: column;
 }
 
 .web-app-bottom div #partecentrale{
     display: flex;
     flex-direction: column;
     padding-inline: 30px;
-    
+    width: 50%;     
+    padding: ;
+    overflow: hidden;
+}
+.web-app-bottom div #partecentrale #lettorealto div i{
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .web-app-bottom div #partecentrale #lettorealto #sinistra{
     display: flex;  
     padding-top: 10px; 
+    gap: 25px;
 }
 
 .web-app-bottom div #partecentrale #lettorealto #destra{
     display: flex;
-    gap: 10px;  
+    gap: 25px;  
     padding-top: 10px; 
+    width: 25%; 
 }
 
 
 .web-app-bottom div #partecentrale #lettorealto #centro{
-  margin-inline: 40px;
+  margin-inline: 30px;
   padding-top: 10px;
 }
 
@@ -242,9 +256,34 @@ a{
     display: flex;
     gap: 10px;
     margin-right: 10px;
+    width: 25%;
   }
 
+  .spotify-time-bar {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
 
+  
+  .timestamp {
+    font-size: 10px;
+    margin-right: 0 5px;
+  }
+  
+  .time-slider {
+    margin: 0 10px;
+    max-width: 80%;
+  }
+
+  .volume-slider{
+    width: 100%;
+    min-width: 60%;
+
+  }
+
+  
 
 
 
@@ -336,7 +375,12 @@ a{
         color: white;
         padding-right: 15px;
     }
-    
+    .web-app-bottom #lettoresinistra #icone {
+        
+        flex-direction: row;
+      
+    }
+ 
 }
 
 

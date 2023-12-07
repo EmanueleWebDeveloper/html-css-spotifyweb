@@ -157,7 +157,7 @@
 
 
         <div class="web-app-bottom">
-            <div>
+            <div id="contenitore-web-app">
                 <div id="lettoresinistra">
                     <div>
                         <picture><img src="./img/sinister.jpeg" alt=""></picture>
@@ -166,9 +166,12 @@
                             <li>Brano nome</li>
                         </ul>
                     </div> 
-                    <div>
+                    <div id="icone">
                         <i class="fa-regular fa-heart"></i>
                         <i class="fa-regular fa-folder"></i>
+                    <div>
+
+                    </div>
                     </div>
                 </div>  
     
@@ -192,8 +195,10 @@
     
     
                     <div id="lettorebasso">
-                        <div>
-                            <span>0:25 --------------------------  4:35</span>
+                        <div class="spotify-time-bar">
+                            <div class="timestamp">0:25</div>
+                            <input type="range" min="0" max="100" value="60" class="time-slider">
+                            <div class="timestamp">4:35</div>
                         </div>
                     </div>        
                 </div>
@@ -202,7 +207,9 @@
                     <i class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-desktop"></i>   
                     <i class="fa-solid fa-volume-high"></i>     
-                    <span>----------</span>        
+                    <div class="spotify-volume-bar">
+                        <input type="range" min="0" max="100" value="60" class="volume-slider"> 
+                    </div>       
                 </div>
             </div>
         </div>
